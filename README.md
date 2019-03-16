@@ -1,2 +1,2 @@
 # Project: HTML Forms
-# Mint.com's signup page
+Mint.com's signup page
