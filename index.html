@@ -12,6 +12,20 @@
 
 <body>
 
+  <div id="main-navigation">
+    <div id="navigation-container">
+      <div class="navigation-column text-column">
+        <span>Already have an Intuit account?</span>
+        <a href="#" class="user-forgot">I forgot my User ID or Password</a>
+      </div>
+      <div class="navigation-column">
+        <button id="btn-sign-in">
+          <a href="#">Sign In</a>
+        </button>
+      </div>
+    </div>
+  </div>
+
   <main>
 
     <section id="mint-logo" class="mint-logo">
@@ -38,12 +52,50 @@
 
         <div id="sign-up-container">
           <div id="su-header">
-            <span id="span-su-header" class="span-header">One Account.<br>Everything Intuit.</span>
-            <span id="span-su-sub-header" class="span-sub-header">
-              <span id="create-su-sub-header">
-                Create an account for all of Intuit's products including Mint. <a href="#">Learn More.</a>
-              </span>
-            </span>
+            <span>One Account. <br>
+              Everything Intuit.</span>
+            <div id="su-sub-header">
+              <span>Create an account for all of Intuit's products including Mint. <a href="#">Learn more</a>.</span>
+            </div>
+            <div id="su-sign-in-header" class="header-visible">
+              <span>Already have an account?. <a href="#">Sign in</a></span>
+            </div>
+          </div>
+
+          <form>
+            <fieldset>
+              <div class="form-set">
+                <label for="email" class="label-text">Email Address</label>
+                <input id="email" class="input-text" maxlength="100" type="email" aria-required="true"
+                  required="required" autocomplete="off">
+              </div>
+
+              <div class="form-set">
+                <label for="phone-num" class="label-text">Phone (recommended)</label>
+                <input id="phone-num" class="input-text" maxlength="20" type="tel" aria-required="true"
+                  required="required" autocomplete="off">
+                <span id="note">Standard call, messaging or data rates may apply.</span>
+              </div>
+
+              <div class="form-set">
+                <label for="password" class="label-text">Password</label>
+                <input id="password" class="input-text" maxlength="100" type="password" aria-required="true"
+                  required="required">
+              </div>
+
+            </fieldset>
+
+            <button type="submit" class="btn-submit"><a href="#">Create Account</a></button>
+            <p id="agreement-warning">By clicking Create Account, you agree to our<br>
+              <a href="#">License Agreement</a> and have read and acknowledge<br>
+              our <a href="#">Privacy Statement</a>.
+            </p>
+          </form>
+
+          <div id="google-captcha">
+            <span>Invisible reCAPTCHA by Google
+              <a href="#">Privacy Policy</a> and
+              <a href="#">Terms of Use</a>.</span>
           </div>
         </div>
 
@@ -52,7 +104,28 @@
 
     </section>
 
+
+    <footer id="mint-footer">
+      <div id="footer-links">
+        <ul id="footer-links-container">
+          <li class="footer-link">Legal</li>
+          <li class="footer-link">Privacy</li>
+          <li class="footer-link">Security</li>
+        </ul>
+      </div>
+      <div id="footer-copyright">
+        <span class="footer-message">
+          © 2019 Intuit, Inc. All rights reserved. Intuit, QuickBooks, QB, TurboTax, ProConnect and Mint are registered
+          trademarks of Intuit Inc.
+        </span>
+        <span class="footer-message">
+          Terms and conditions, features, support, pricing, and service options subject to change without notice.
+        </span>
+      </div>
+    </footer>
   </main>
+
+
 
 </body>
 

@@ -11,6 +11,7 @@ html {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.5;
+  color: #4C4C4C;
 }
 
 html,
@@ -33,6 +34,12 @@ main {
   position: relative;
   width: 100%;
   height: auto;
+}
+
+a {
+  text-decoration: none;
+  font-size: 12px;
+  color: #0077C5;
 }
 
 .mint-logo {
@@ -165,12 +172,201 @@ main {
   padding-bottom: 20px;
 }
 
-#span-su-header {
+#su-header>span {
   color: #4C4C4C;
   line-height: 1.1;
   font-size: 24px;
 }
 
-#span-su-sub-header {
+#su-sub-header {
+  text-align: center;
+  font-weight: 300;
+  line-height: 1.2;
   padding-top: 20px;
+}
+
+#su-sign-in-header {
+  text-align: center;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+}
+
+.form-set {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.label-text {
+  padding-bottom: 6px;
+  font-weight: 400;
+  color: #404040;
+  font-size: 14px;
+  line-height: 25px;
+}
+
+.input-text {
+  border: 1px solid #C1C5C8;
+  border-radius: 3px;
+  line-height: 1.3em;
+  color: #000;
+  outline: 0;
+  font-size: 17px;
+  width: 320px;
+  min-width: 160px;
+  padding-left: 8px;
+  padding-right: 6px;
+}
+
+#note {
+  padding: 5px 0;
+  font-size: 10px;
+  color: #444;
+}
+
+.btn-submit {
+  background: #0077C5;
+  border: #0077C5;
+  border-radius: 4px;
+  width: 100%;
+  height: 44px;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .75);
+  min-width: 100px;
+  display: inline-block;
+  padding: 6px 12px;
+  line-height: 1.428571429;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+.btn-submit a {
+  text-shadow: none;
+  font-weight: 400;
+  color: #FFF;
+}
+
+#agreement-warning {
+  text-align: center;
+  font-size: 12px;
+  font-style: italic;
+  color: #757575;
+
+}
+
+#agreement-warning a {
+  color: #0077C5;
+}
+
+#google-captcha {
+  background: #ECEEF1;
+  color: #8d9096;
+  font-size: 10px;
+  padding: 20px 0;
+  text-align: center;
+  margin: 32px -30px -30px;
+  padding: 16px;
+}
+
+#google-captcha a {
+  font-size: 10px;
+}
+
+#main-navigation {
+  display: none;
+}
+
+#mint-footer {
+  width: 90%;
+  color: #505050;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 12px;
+  text-align: center;
+  position: relative;
+  top: 120px;
+}
+
+#footer-links-container {
+  list-style: none;
+  padding-bottom: 5px;
+  padding-left: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-link {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 12px;
+}
+
+.footer-message {
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Media Queries */
+
+@media only screen and (min-width: 768px) {
+  #su-sign-in-header {
+    display: inline;
+    visibility: hidden;
+  }
+
+  #main-navigation {
+    padding: 10px 30px;
+    height: 60px;
+    background: #eceef1;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  #navigation-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .navigation-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 10px;
+  }
+
+  .text-column {
+    text-align: right;
+    font-size: 12px;
+    color: #505050;
+  }
+
+  #btn-sign-in {
+    background: #0077C5;
+    border-radius: 4px;
+    border: 1px solid #4c4c4c;
+    height: 34px;
+  }
+
+  #btn-sign-in a {
+    padding: 0 20px;
+    color: white;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: normal;
+  }
 }
